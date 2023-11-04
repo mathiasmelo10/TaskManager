@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace TaskManager
 {
-    public partial class Form1 : Form
+    public partial class TaskManagerForm : Form
     {
-        public Form1()
+        public TaskManagerForm()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
