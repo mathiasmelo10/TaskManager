@@ -38,6 +38,7 @@
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.NewTaskButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             // InProgressLabel
             // 
             this.InProgressLabel.AutoSize = true;
-            this.InProgressLabel.Location = new System.Drawing.Point(285, 58);
+            this.InProgressLabel.Location = new System.Drawing.Point(296, 58);
             this.InProgressLabel.Name = "InProgressLabel";
             this.InProgressLabel.Size = new System.Drawing.Size(73, 15);
             this.InProgressLabel.TabIndex = 2;
@@ -131,11 +132,21 @@
             this.SaveButton.Text = "Save ";
             this.SaveButton.UseVisualStyleBackColor = true;
             // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(82, 369);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 8;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            // 
             // TaskManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 399);
+            this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.NewTaskButton);
             this.Controls.Add(this.WelcomeLabel);
@@ -164,6 +175,7 @@
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Button NewTaskButton;
         private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }
 
