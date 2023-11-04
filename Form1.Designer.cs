@@ -37,6 +37,7 @@
             this.Done = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.NewTaskButton = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,11 +122,21 @@
             this.NewTaskButton.Text = "New Task !";
             this.NewTaskButton.UseVisualStyleBackColor = true;
             // 
+            // SaveButton
+            // 
+            this.SaveButton.Location = new System.Drawing.Point(255, 369);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(138, 23);
+            this.SaveButton.TabIndex = 7;
+            this.SaveButton.Text = "Save ";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            // 
             // TaskManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 399);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.NewTaskButton);
             this.Controls.Add(this.WelcomeLabel);
             this.Controls.Add(this.dataGridView1);
@@ -152,6 +163,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Done;
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Button NewTaskButton;
+        private System.Windows.Forms.Button SaveButton;
     }
 }
 
